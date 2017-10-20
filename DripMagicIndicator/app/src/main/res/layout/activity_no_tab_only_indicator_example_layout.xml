@@ -4,20 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="net.lucode.hackware.magicindicatordemo.example.NoTabOnlyIndicatorExampleActivity">
+    tools:context="com.iflytek.drip.magicindicatordemo.example.NoTabOnlyIndicatorExampleActivity">
 
-    <net.lucode.hackware.magicindicator.MagicIndicator
+    <com.iflytek.drip.magicindicator.MagicIndicator
         android:id="@+id/magic_indicator1"
         android:layout_width="match_parent"
         android:layout_height="@dimen/small_navigator_height"
         android:layout_marginTop="@dimen/navigator_margin_top" />
 
-    <net.lucode.hackware.magicindicator.MagicIndicator
+    <com.iflytek.drip.magicindicator.MagicIndicator
         android:id="@+id/magic_indicator2"
         android:layout_width="match_parent"
         android:layout_height="@dimen/small_navigator_height"
         android:layout_marginTop="@dimen/navigator_margin_top_large" />
-    <net.lucode.hackware.magicindicator.MagicIndicator
+    <com.iflytek.drip.magicindicator.MagicIndicator
         android:id="@+id/magic_indicator3"
         android:layout_width="match_parent"
         android:layout_height="5dp"

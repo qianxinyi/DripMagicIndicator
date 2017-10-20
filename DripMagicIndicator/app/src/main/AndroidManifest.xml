@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.lucode.hackware.magicindicatordemo">
+    package="com.iflytek.drip.magicindicatordemo">
 
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".example.ExampleMainActivity">
+        <activity android:name="com.iflytek.drip.magicindicatordemo.example.ExampleMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -15,35 +15,35 @@
         </activity>
 
         <activity
-            android:name=".example.ScrollableTabExampleActivity"
+            android:name="com.iflytek.drip.magicindicatordemo.example.ScrollableTabExampleActivity"
             android:label="@string/scrollable_tab" />
 
         <activity
-            android:name=".example.FixedTabExampleActivity"
+            android:name="com.iflytek.drip.magicindicatordemo.example.FixedTabExampleActivity"
             android:label="@string/fixed_tab" />
 
         <activity
-            android:name=".example.DynamicTabExampleActivity"
+            android:name="com.iflytek.drip.magicindicatordemo.example.DynamicTabExampleActivity"
             android:label="@string/dynamic_tab" />
 
         <activity
-            android:name=".example.NoTabOnlyIndicatorExampleActivity"
+            android:name="com.iflytek.drip.magicindicatordemo.example.NoTabOnlyIndicatorExampleActivity"
             android:label="@string/no_tab_only_indicator" />
 
         <activity
-            android:name=".example.FragmentContainerExampleActivity"
+            android:name="com.iflytek.drip.magicindicatordemo.example.FragmentContainerExampleActivity"
             android:label="@string/work_with_fragment_container" />
 
         <activity
-            android:name=".example.BadgeTabExampleActivity"
+            android:name="com.iflytek.drip.magicindicatordemo.example.BadgeTabExampleActivity"
             android:label="@string/tab_with_badge_view" />
 
         <activity
-            android:name=".example.CustomNavigatorExampleActivity"
+            android:name="com.iflytek.drip.magicindicatordemo.example.CustomNavigatorExampleActivity"
             android:label="@string/custom_navigator" />
 
         <activity
-            android:name=".example.LoadCustomLayoutExampleActivity"
+            android:name="com.iflytek.drip.magicindicatordemo.example.LoadCustomLayoutExampleActivity"
             android:label="@string/tab_with_custom_layout" />
 
     </application>

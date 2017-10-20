@@ -8,7 +8,7 @@ import android.support.v4.view.ViewPager;
  */
 
 public class ViewPagerHelper {
-    public static void bind(final MagicIndicator magicIndicator, ViewPager viewPager) {
+    public static void bind(final IMagicIndicator magicIndicator, ViewPager viewPager) {
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
             @Override

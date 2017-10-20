@@ -7,8 +7,8 @@ import android.graphics.Paint;
 import android.view.View;
 
 import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.model.PositionData;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.IPagerIndicator;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.PositionData;
 
 import java.util.List;
 

@@ -8,7 +8,7 @@ import android.os.Build;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Interpolator;
 
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.model.PositionData;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.PositionData;
 
 import java.util.ArrayList;
 import java.util.List;

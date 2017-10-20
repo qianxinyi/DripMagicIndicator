@@ -17,9 +17,9 @@ import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
 import net.lucode.hackware.magicindicator.buildins.UIUtil;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigatorAdapter;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.IPagerIndicator;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.IPagerTitleView;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ColorTransitionPagerTitleView;
@@ -31,7 +31,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FixedTabExampleActivity extends AppCompatActivity {
-    private static final String[] CHANNELS = new String[]{"KITKAT", "LOLLIPOP","NOUGAT", "DONUT"};
+    private static final String[] CHANNELS = new String[]{"KITKAT", "LOLLIPOP","NOUGAT", "DONUT","YOKU","WOWO"};
     private List<String> mDataList = Arrays.asList(CHANNELS);
     private ExamplePagerAdapter mExamplePagerAdapter = new ExamplePagerAdapter(mDataList);
 
@@ -54,6 +54,7 @@ public class FixedTabExampleActivity extends AppCompatActivity {
     private void initMagicIndicator1() {
         MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator1);
         CommonNavigator commonNavigator = new CommonNavigator(this);
+        commonNavigator.setAdjustMode(true);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
             @Override
             public int getCount() {
@@ -94,7 +95,7 @@ public class FixedTabExampleActivity extends AppCompatActivity {
         MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator2);
         magicIndicator.setBackgroundColor(Color.WHITE);
         CommonNavigator commonNavigator = new CommonNavigator(this);
-
+        commonNavigator.setAdjustMode(true);
         commonNavigator.setAdapter(new CommonNavigatorAdapter() {
             @Override
             public int getCount() {

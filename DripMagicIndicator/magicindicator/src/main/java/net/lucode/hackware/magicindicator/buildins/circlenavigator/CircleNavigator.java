@@ -10,7 +10,7 @@ import android.view.ViewConfiguration;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 
-import net.lucode.hackware.magicindicator.abs.IPagerNavigator;
+import net.lucode.hackware.magicindicator.IPagerNavigator;
 import net.lucode.hackware.magicindicator.buildins.UIUtil;
 
 import java.util.ArrayList;

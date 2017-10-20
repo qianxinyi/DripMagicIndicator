@@ -9,16 +9,17 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 
+import net.lucode.hackware.magicindicator.DripMagicIndicator;
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
 import net.lucode.hackware.magicindicator.buildins.UIUtil;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.BezierPagerIndicator;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigatorAdapter;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.IPagerIndicator;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.IPagerTitleView;
+import net.lucode.hackware.magicindicatordemo.ext.indicators.BezierPagerIndicator;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.TriangularPagerIndicator;
+import net.lucode.hackware.magicindicatordemo.ext.indicators.TriangularPagerIndicator;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.WrapPagerIndicator;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ColorTransitionPagerTitleView;
@@ -27,7 +28,6 @@ import net.lucode.hackware.magicindicatordemo.R;
 import net.lucode.hackware.magicindicatordemo.ext.titles.ColorFlipPagerTitleView;
 import net.lucode.hackware.magicindicatordemo.ext.titles.ScaleTransitionPagerTitleView;
 
-import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
 
@@ -57,13 +57,53 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator1() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator1);
+        DripMagicIndicator magicIndicator = (DripMagicIndicator) findViewById(R.id.magic_indicator1);
         //magicIndicator.setBackgroundColor(Color.parseColor("#d43d3d"));
-        //CommonNavigator commonNavigator = new CommonNavigator(this);
+        int padding = UIUtil.getScreenWidth(this) / 2;
+        DripMagicIndicator.Builder builder = magicIndicator.new Builder();
+         builder.setAdjustMode(false)
+                .setFollowTouch(false)
+                .setRightPadding(padding)
+                .setLeftPadding(padding)
+                .setAdapter(new CommonNavigatorAdapter() {
+                    @Override
+            public int getCount() {
+                return mDataList == null ? 0 : mDataList.size();
+            }
+
+            @Override
+            public IPagerTitleView getTitleView(Context context, final int index) {
+                ClipPagerTitleView clipPagerTitleView = new ClipPagerTitleView(context);
+                clipPagerTitleView.setText(mDataList.get(index));
+//                clipPagerTitleView.setTextColor(Color.parseColor("#f2c4c4"));
+//                clipPagerTitleView.setClipColor(Color.WHITE);
+                clipPagerTitleView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        mViewPager.setCurrentItem(index);
+                    }
+                });
+                return clipPagerTitleView;
+            }
+
+            @Override
+            public IPagerIndicator getIndicator(Context context) {
+                return null;
+            }
+
+            @Override
+            public float getTitleWeight(Context context, int index) {
+                return super.getTitleWeight(context, index);
+            }
+                })
+                .build();
+
+//        CommonNavigator commonNavigator = new CommonNavigator(this);
 //        commonNavigator.setSkimOver(true);//似乎没有效果
 //        int padding = UIUtil.getScreenWidth(this) / 2;
 //        commonNavigator.setRightPadding(padding);
 //        commonNavigator.setLeftPadding(padding);
+//        //commonNavigator.setAdjustMode(true);
 //        commonNavigator.setAdapter(new CommonNavigatorAdapter() {
 //
 //            @Override
@@ -97,44 +137,41 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
 //            }
 //        });
 //        magicIndicator.setNavigator(commonNavigator);
-        int padding = UIUtil.getScreenWidth(this) / 2;
-        magicIndicator.setCommonNavigator(new CommonNavigatorAdapter() {
+//        magicIndicator.setCommonNavigator(new CommonNavigatorAdapter() {
+//
+//            @Override
+//            public int getCount() {
+//                return mDataList == null ? 0 : mDataList.size();
+//            }
+//
+//            @Override
+//            public IPagerTitleView getTitleView(Context context, final int index) {
+//                ClipPagerTitleView clipPagerTitleView = new ClipPagerTitleView(context);
+//                clipPagerTitleView.setText(mDataList.get(index));
+////                clipPagerTitleView.setTextColor(Color.parseColor("#f2c4c4"));
+////                clipPagerTitleView.setClipColor(Color.WHITE);
+//                clipPagerTitleView.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        mViewPager.setCurrentItem(index,false);//跨页切换闪屏
+//                    }
+//                });
+//                return clipPagerTitleView;
+//            }
+//
+//            @Override
+//            public IPagerIndicator getIndicator(Context context) {
+//                return null;
+//            }
+//
+//            @Override
+//            public float getTitleWeight(Context context, int index) {
+//                return super.getTitleWeight(context, index);
+//            }
+//        })
+//                .setFollowTouch(false)
+//                .setAdjustMode(true);
 
-            @Override
-            public int getCount() {
-                return mDataList == null ? 0 : mDataList.size();
-            }
-
-            @Override
-            public IPagerTitleView getTitleView(Context context, final int index) {
-                ClipPagerTitleView clipPagerTitleView = new ClipPagerTitleView(context);
-                clipPagerTitleView.setText(mDataList.get(index));
-//                clipPagerTitleView.setTextColor(Color.parseColor("#f2c4c4"));
-//                clipPagerTitleView.setClipColor(Color.WHITE);
-                clipPagerTitleView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        mViewPager.setCurrentItem(index,false);//跨页切换闪屏
-                    }
-                });
-                return clipPagerTitleView;
-            }
-
-            @Override
-            public IPagerIndicator getIndicator(Context context) {
-                return null;
-            }
-
-            @Override
-            public float getTitleWeight(Context context, int index) {
-                return super.getTitleWeight(context, index);
-            }
-        })
-                .setFollowTouch(false)//default true
-                .setLeftPadding(padding)
-                .setRightPadding(padding)
-                .setSkimOver(false)//default
-                .setAdjustMode(false);//default);
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
@@ -253,41 +290,48 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator5() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator5);
+        DripMagicIndicator magicIndicator = (DripMagicIndicator) findViewById(R.id.magic_indicator5);
         magicIndicator.setBackgroundColor(Color.WHITE);
-        magicIndicator.setCommonNavigator(new CommonNavigatorAdapter() {
-            @Override
-            public int getCount() {
-                return mDataList == null ? 0 : mDataList.size();
-            }
+        DripMagicIndicator.Builder builder=magicIndicator.new Builder();
+        builder.setAdjustMode(false)
+                .setFollowTouch(true)
+                .setSkimOver(true)
+                .setEnablePivotScroll(true)
+                .setScrollPivotX(0.8f)
+                .setAdapter(new CommonNavigatorAdapter() {
+                    @Override
+                    public int getCount() {
+                        return mDataList == null ? 0 : mDataList.size();
+                    }
 
-            @Override
-            public IPagerTitleView getTitleView(Context context, final int index) {
-                SimplePagerTitleView simplePagerTitleView = new ScaleTransitionPagerTitleView(context);
-                simplePagerTitleView.setText(mDataList.get(index));
+                    @Override
+                    public IPagerTitleView getTitleView(Context context, final int index) {
+                        SimplePagerTitleView simplePagerTitleView = new ScaleTransitionPagerTitleView(context);
+               simplePagerTitleView.setText(mDataList.get(index));
                 simplePagerTitleView.setTextSize(18);
-                simplePagerTitleView.setNormalColor(Color.parseColor("#616161"));
-                simplePagerTitleView.setSelectedColor(Color.parseColor("#f57c00"));
-                simplePagerTitleView.setOnClickListener(new View.OnClickListener() {
+               simplePagerTitleView.setNormalColor(Color.parseColor("#616161"));
+               simplePagerTitleView.setSelectedColor(Color.parseColor("#f57c00"));
+               simplePagerTitleView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         mViewPager.setCurrentItem(index);
-                    }
+                   }
                 });
                 return simplePagerTitleView;
-            }
+                    }
 
-            @Override
-            public IPagerIndicator getIndicator(Context context) {
-                LinePagerIndicator indicator = new LinePagerIndicator(context);
-                indicator.setStartInterpolator(new AccelerateInterpolator());
-                indicator.setEndInterpolator(new DecelerateInterpolator(1.6f));
-                indicator.setYOffset(UIUtil.dip2px(context, 39));
-                indicator.setLineHeight(UIUtil.dip2px(context, 1));
-                indicator.setColors(Color.parseColor("#f57c00"));
-                return indicator;
-            }
-        }).setScrollPivotX(0.8f);
+                    @Override
+                    public IPagerIndicator getIndicator(Context context) {
+                        LinePagerIndicator indicator = new LinePagerIndicator(context);
+                        indicator.setStartInterpolator(new AccelerateInterpolator());
+                        indicator.setEndInterpolator(new DecelerateInterpolator(1.6f));
+                        indicator.setYOffset(UIUtil.dip2px(context, 39));
+                        indicator.setLineHeight(UIUtil.dip2px(context, 1));
+                        indicator.setColors(Color.parseColor("#f57c00"));
+                        return indicator;
+                    }
+                })
+                .build();
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
@@ -329,9 +373,10 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator7() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator7);
+        DripMagicIndicator magicIndicator = (DripMagicIndicator) findViewById(R.id.magic_indicator7);
         magicIndicator.setBackgroundColor(Color.parseColor("#fafafa"));
-        magicIndicator.setCommonNavigator(new CommonNavigatorAdapter() {
+        DripMagicIndicator.Builder builder=magicIndicator.new Builder();
+        builder.setAdapter(new CommonNavigatorAdapter() {
             @Override
             public int getCount() {
                 return mDataList == null ? 0 : mDataList.size();
@@ -364,7 +409,7 @@ public class ScrollableTabExampleActivity extends AppCompatActivity {
                 indicator.setColors(Color.parseColor("#00c853"));
                 return indicator;
             }
-        }).setScrollPivotX(0.65f);
+        }).setScrollPivotX(0.65f).setSkimOver(true).build();
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 

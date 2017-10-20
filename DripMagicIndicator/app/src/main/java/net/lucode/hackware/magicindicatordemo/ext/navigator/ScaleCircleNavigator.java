@@ -13,7 +13,7 @@ import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 
 import net.lucode.hackware.magicindicator.NavigatorHelper;
-import net.lucode.hackware.magicindicator.abs.IPagerNavigator;
+import net.lucode.hackware.magicindicator.IPagerNavigator;
 import net.lucode.hackware.magicindicator.buildins.ArgbEvaluatorHolder;
 import net.lucode.hackware.magicindicator.buildins.UIUtil;
 

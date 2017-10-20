@@ -8,7 +8,7 @@ import android.graphics.Rect;
 import android.view.View;
 
 import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IMeasurablePagerTitleView;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.IMeasurablePagerTitleView;
 
 /**
  * 类似今日头条切换效果的指示器标题

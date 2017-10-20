@@ -13,9 +13,9 @@ import android.widget.TextView;
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigatorAdapter;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.IPagerIndicator;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.IPagerTitleView;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.CommonPagerTitleView;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.badge.BadgeAnchor;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.badge.BadgePagerTitleView;
@@ -44,7 +44,6 @@ public class LoadCustomLayoutExampleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_load_custom_layout_example);
-
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         mViewPager.setAdapter(mExamplePagerAdapter);
         initMagicIndicator1();
@@ -65,52 +64,7 @@ public class LoadCustomLayoutExampleActivity extends AppCompatActivity {
             @Override
             public IPagerTitleView getTitleView(Context context, final int index) {
                 BadgePagerTitleView badgePagerTitleView=new BadgePagerTitleView(context);
-                CommonPagerTitleView commonPagerTitleView = new CommonPagerTitleView(context);
-
-                // load custom layout
-                View customLayout = LayoutInflater.from(context).inflate(R.layout.simple_pager_title_layout, null);
-                final ImageView titleImg = (ImageView) customLayout.findViewById(R.id.title_img);
-                final TextView titleText = (TextView) customLayout.findViewById(R.id.title_text);
-                titleImg.setImageResource(mUnselectedIds[index]);
-                titleText.setText(mDataList.get(index));
-
-                commonPagerTitleView.setContentView(customLayout);
-                commonPagerTitleView.setOnPagerTitleChangeListener(new CommonPagerTitleView.OnPagerTitleChangeListener() {
-
-                    @Override
-                    public void onSelected(int index, int totalCount) {
-                        titleText.setTextColor(Color.parseColor("#00CED1"));
-                    }
-
-                    @Override
-                    public void onDeselected(int index, int totalCount) {
-                        titleText.setTextColor(Color.LTGRAY);
-                    }
-
-                    @Override
-                    public void onLeave(int index, int totalCount, float leavePercent, boolean leftToRight) {
-                        //titleImg.setScaleX(1.3f + (0.8f - 1.3f) * leavePercent);
-                       // titleImg.setScaleY(1.3f + (0.8f - 1.3f) * leavePercent);
-                        if(leavePercent>=0.8f)
-                           titleImg.setImageResource(mUnselectedIds[index]);
-                    }
-
-                    @Override
-                    public void onEnter(int index, int totalCount, float enterPercent, boolean leftToRight) {
-                        //titleImg.setScaleX(0.8f + (1.3f - 0.8f) * enterPercent);
-                        //titleImg.setScaleY(0.8f + (1.3f - 0.8f) * enterPercent);
-                        if(enterPercent>=0.8f)
-                           titleImg.setImageResource(mSelectedIds[index]);
-                    }
-                });
-                commonPagerTitleView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        mViewPager.setCurrentItem(index);
-                        titleImg.setImageResource(mSelectedIds[index]);
-                        commonNavigator.setPagerTitleViewWithMsgBadge(2,R.layout.simple_count_badge_layout,""+new Random().nextInt(120));
-                    }
-                });
+                CommonPagerTitleView  commonPagerTitleView= initLayout(context,index);
                 commonNavigator.setPagerTitleViewWithMsgBadge(1,R.layout.simple_count_badge_layout,""+new Random().nextInt(120));
                 badgePagerTitleView.setInnerPagerTitleView(commonPagerTitleView);
                 badgePagerTitleView.setXBadgeRule(BadgeAnchor.CONTENT_RIGHT,-40);
@@ -126,4 +80,82 @@ public class LoadCustomLayoutExampleActivity extends AppCompatActivity {
         magicIndicator.setNavigator(commonNavigator);
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
+
+    private CommonPagerTitleView initLayout(Context context,final int index){
+        // load custom layout
+        View customLayout = LayoutInflater.from(context).inflate(R.layout.simple_pager_title_layout, null);
+        final ImageView titleImg = (ImageView) customLayout.findViewById(R.id.title_img);
+        final TextView titleText = (TextView) customLayout.findViewById(R.id.title_text);
+        titleImg.setImageResource(mUnselectedIds[index]);
+        titleText.setText(mDataList.get(index));
+        CommonPagerTitleView commonPagerTitleView=new CommonPagerTitleView(context) {
+            @Override
+            public void onSelected(int index, int totalCount) {
+                titleText.setTextColor(Color.parseColor("#00CED1"));
+            }
+
+            @Override
+            public void onDeselected(int index, int totalCount) {
+                titleText.setTextColor(Color.LTGRAY);
+            }
+
+            @Override
+            public void onLeave(int index, int totalCount, float leavePercent, boolean leftToRight) {
+                //titleImg.setScaleX(1.3f + (0.8f - 1.3f) * leavePercent);
+                // titleImg.setScaleY(1.3f + (0.8f - 1.3f) * leavePercent);
+                if(leavePercent>=0.8f)
+                    titleImg.setImageResource(mUnselectedIds[index]);
+            }
+
+            @Override
+            public void onEnter(int index, int totalCount, float enterPercent, boolean leftToRight) {
+                //titleImg.setScaleX(0.8f + (1.3f - 0.8f) * enterPercent);
+                //titleImg.setScaleY(0.8f + (1.3f - 0.8f) * enterPercent);
+                if(enterPercent>=0.8f)
+                    titleImg.setImageResource(mSelectedIds[index]);
+            }
+        };
+        commonPagerTitleView.setContentView(customLayout);
+
+
+//        commonPagerTitleView.setOnPagerTitleChangeListener(new CommonPagerTitleView.OnPagerTitleChangeListener() {
+//
+//            @Override
+//            public void onSelected(int index, int totalCount) {
+//                titleText.setTextColor(Color.parseColor("#00CED1"));
+//            }
+//
+//            @Override
+//            public void onDeselected(int index, int totalCount) {
+//                titleText.setTextColor(Color.LTGRAY);
+//            }
+//
+//            @Override
+//            public void onLeave(int index, int totalCount, float leavePercent, boolean leftToRight) {
+//                //titleImg.setScaleX(1.3f + (0.8f - 1.3f) * leavePercent);
+//                // titleImg.setScaleY(1.3f + (0.8f - 1.3f) * leavePercent);
+//                if(leavePercent>=0.8f)
+//                    titleImg.setImageResource(mUnselectedIds[index]);
+//            }
+//
+//            @Override
+//            public void onEnter(int index, int totalCount, float enterPercent, boolean leftToRight) {
+//                //titleImg.setScaleX(0.8f + (1.3f - 0.8f) * enterPercent);
+//                //titleImg.setScaleY(0.8f + (1.3f - 0.8f) * enterPercent);
+//                if(enterPercent>=0.8f)
+//                    titleImg.setImageResource(mSelectedIds[index]);
+//            }
+//        });
+        commonPagerTitleView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mViewPager.setCurrentItem(index);
+                titleImg.setImageResource(mSelectedIds[index]);
+
+            }
+        });
+        return commonPagerTitleView;
+    }
+
+
 }

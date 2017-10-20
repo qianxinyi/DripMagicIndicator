@@ -22,7 +22,7 @@ import java.util.List;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class FragmentsHelper {
-    private MagicIndicator magicIndicator;
+    private IMagicIndicator magicIndicator;
     private int mContainerViewId;
     private FragmentManager fragmentManager;
     private List<Fragment> fragments;
@@ -53,7 +53,7 @@ public class FragmentsHelper {
         }
     };
 
-    public FragmentsHelper(final MagicIndicator magicIndicator, int mContainerViewId, FragmentManager fragmentManager, List<Fragment> fragments) {
+    public FragmentsHelper(final IMagicIndicator magicIndicator, int mContainerViewId, FragmentManager fragmentManager, List<Fragment> fragments) {
         this.magicIndicator = magicIndicator;
         this.mContainerViewId = mContainerViewId;
         this.fragmentManager = fragmentManager;

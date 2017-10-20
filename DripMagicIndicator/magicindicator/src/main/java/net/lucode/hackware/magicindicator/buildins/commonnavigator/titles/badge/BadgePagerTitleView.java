@@ -5,8 +5,8 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IMeasurablePagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.IMeasurablePagerTitleView;
+import net.lucode.hackware.magicindicator.buildins.commonnavigator.IPagerTitleView;
 
 /**
  * 支持显示角标的title，角标布局可自定义

@@ -13,12 +13,7 @@ import android.widget.TextView;
 import net.lucode.hackware.magicindicator.NavigatorHelper;
 import net.lucode.hackware.magicindicator.R;
 import net.lucode.hackware.magicindicator.ScrollState;
-import net.lucode.hackware.magicindicator.abs.IPagerNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IMeasurablePagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.model.PositionData;
+import net.lucode.hackware.magicindicator.IPagerNavigator;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.badge.BadgePagerTitleView;
 
 import java.util.ArrayList;
@@ -42,9 +37,9 @@ public class CommonNavigator extends FrameLayout implements IPagerNavigator, Nav
      * 提供给外部的参数配置
      */
     /****************************************************/
-    private boolean mAdjustMode;   // 自适应模式，适用于数目固定的、少量的title
-    private boolean mEnablePivotScroll; // 启动中心点滚动
-    private float mScrollPivotX = 0.5f; // 滚动中心点 0.0f - 1.0f
+    private boolean mAdjustMode;   // 自适应模式，适用于数目固定的、少量的title【noscroll/scroll】
+    private boolean mEnablePivotScroll; // 启动中心点滚动  [scroll]
+    private float mScrollPivotX = 0.5f; // 滚动中心点 0.0f - 1.0f[scroll]
     private boolean mSmoothScroll = true;   // 是否平滑滚动，适用于 !mAdjustMode && !mFollowTouch
     private boolean mFollowTouch = true;    // 是否手指跟随滚动
     private boolean mSkimOver;  // 跨多页切换时，中间页是否显示 "掠过" 效果[只针对指示器而已]
@@ -432,30 +427,33 @@ public class CommonNavigator extends FrameLayout implements IPagerNavigator, Nav
     public void setReselectWhenLayout(boolean reselectWhenLayout) {
         mReselectWhenLayout = reselectWhenLayout;
     }
+
     /**
      * offer to set badge
      */
     public void setPagerTitleViewWithMsgBadge(int index, int badgeResLayout, String msg) {
-        if(msg==null) return;
+        if (msg == null) return;
         IPagerTitleView view = getPagerTitleView(index);
-        if(view==null) return;
+        if (view == null) return;
         if (!(view instanceof BadgePagerTitleView)) return;
         BadgePagerTitleView badgePagerTitleView = (BadgePagerTitleView) view;
-        Context context=this.getContext();
+        Context context = this.getContext();
         TextView badgeTextView = (TextView) LayoutInflater.from(context).inflate(badgeResLayout, null);
-        if(badgeTextView==null) return;
+        if (badgeTextView == null) return;
         badgeTextView.setText(msg);
         badgePagerTitleView.setBadgeView(badgeTextView);
     }
+
     public void setPagerTitleViewWithMsgBadge(int index, String msg) {
         int layout;
-        if(msg==null) return;
-        layout=R.layout.simple_count_badge_layout;
-        setPagerTitleViewWithMsgBadge(index,layout,msg);
+        if (msg == null) return;
+        layout = R.layout.simple_count_badge_layout;
+        setPagerTitleViewWithMsgBadge(index, layout, msg);
     }
+
     public void setPagerTitleViewWithDotBadge(int index, int badgeResLayout) {
         IPagerTitleView view = getPagerTitleView(index);
-        if(view==null) return;
+        if (view == null) return;
         if (!(view instanceof BadgePagerTitleView)) return;
         BadgePagerTitleView badgePagerTitleView = (BadgePagerTitleView) view;
         Context context = this.getContext();
@@ -463,96 +461,8 @@ public class CommonNavigator extends FrameLayout implements IPagerNavigator, Nav
         if (badgeView == null) return;
         badgePagerTitleView.setBadgeView(badgeView);
     }
-    public void setPagerTitleViewWithDotBadge(int index){
-          setPagerTitleViewWithDotBadge(index,R.layout.simple_red_dot_badge_layout);
+
+    public void setPagerTitleViewWithDotBadge(int index) {
+        setPagerTitleViewWithDotBadge(index, R.layout.simple_red_dot_badge_layout);
     }
-// just for builder mode
-//
-//    public static class  CommonNavigatorBuilder{
-//        private Context context;
-//        private boolean mAdjustMode;   // 自适应模式，适用于数目固定的、少量的title
-//        private boolean mEnablePivotScroll; // 启动中心点滚动
-//        private float mScrollPivotX = 0.5f; // 滚动中心点 0.0f - 1.0f
-//        private boolean mSmoothScroll = true;   // 是否平滑滚动，适用于 !mAdjustMode && !mFollowTouch
-//        private boolean mFollowTouch = true;    // 是否手指跟随滚动
-//        private int mRightPadding;
-//        private int mLeftPadding;
-//        private boolean mIndicatorOnTop;    // 指示器是否在title上层，默认为下层
-//        private boolean mSkimOver;  // 跨多页切换时，中间页是否显示 "掠过" 效果[只针对指示器而已]
-//        private boolean mReselectWhenLayout = true; //
-//
-//        public CommonNavigatorBuilder setContext(Context context) {
-//            this.context = context;
-//            return this;
-//        }
-//
-//        public CommonNavigatorBuilder setAdjustMode(boolean mAdjustMode) {
-//            this.mAdjustMode = mAdjustMode;
-//            return this;
-//        }
-//
-//        public CommonNavigatorBuilder setEnablePivotScroll(boolean mEnablePivotScroll) {
-//            this.mEnablePivotScroll = mEnablePivotScroll;
-//            return this;
-//        }
-//
-//        public CommonNavigatorBuilder setScrollPivotX(float mScrollPivotX) {
-//            this.mScrollPivotX = mScrollPivotX;
-//            return this;
-//        }
-//
-//        public CommonNavigatorBuilder setSmoothScroll(boolean mSmoothScroll) {
-//            this.mSmoothScroll = mSmoothScroll;
-//            return this;
-//        }
-//
-//        public CommonNavigatorBuilder setFollowTouch(boolean mFollowTouch) {
-//            this.mFollowTouch = mFollowTouch;
-//            return this;
-//        }
-//
-//        public CommonNavigatorBuilder setRightPadding(int mRightPadding) {
-//            this.mRightPadding = mRightPadding;
-//            return this;
-//        }
-//
-//        public CommonNavigatorBuilder setLeftPadding(int mLeftPadding) {
-//            this.mLeftPadding = mLeftPadding;
-//            return this;
-//        }
-//
-//        public CommonNavigatorBuilder setIndicatorOnTop(boolean mIndicatorOnTop) {
-//            this.mIndicatorOnTop = mIndicatorOnTop;
-//            return this;
-//        }
-//
-//        public CommonNavigatorBuilder setSkimOver(boolean mSkimOver) {
-//            this.mSkimOver = mSkimOver;
-//            return this;
-//        }
-//
-//        public CommonNavigatorBuilder setReselectWhenLayout(boolean mReselectWhenLayout) {
-//            this.mReselectWhenLayout = mReselectWhenLayout;
-//            return this;
-//        }
-//
-//        public CommonNavigator build(){
-//            CommonNavigator commonNavigator=new CommonNavigator(context);
-//            commonNavigator.setAdjustMode(this.mAdjustMode);
-//            commonNavigator.setFollowTouch(this.mFollowTouch);
-//            commonNavigator.setEnablePivotScroll(this.mEnablePivotScroll);
-//            commonNavigator.setIndicatorOnTop(this.mIndicatorOnTop);
-//            commonNavigator.setSkimOver(this.mSkimOver);
-//            commonNavigator.setScrollPivotX(this.mScrollPivotX);
-//            commonNavigator.setSmoothScroll(this.mSmoothScroll);
-//            commonNavigator.setReselectWhenLayout(this.mReselectWhenLayout);
-//            commonNavigator.setLeftPadding(this.mLeftPadding);
-//            commonNavigator.setRightPadding(this.mRightPadding);
-//            return commonNavigator;
-//        }
-//
-//    }
-
-
-
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\AndroidProject\ViewPagerIndicator-Master2\library\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="43ee176d2a102c31b895f84697bc50d7969dc745">
+        <dex dex="E:\AndroidProject\ViewPagerIndicator-Master2\app\build\intermediates\pre-dexed\debug\classes_5257ebc9c3df7016ef227ab993c7c372dcf2581e.jar" />
+    </item>
+
+</items>

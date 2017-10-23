@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\tab_speech_select.png",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\src\\main\\res\\mipmap-xhdpi\\tab_speech_select.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\tab_contact_unselect.png",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\src\\main\\res\\mipmap-xhdpi\\tab_contact_unselect.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\tab_more_unselect.png",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\src\\main\\res\\mipmap-xhdpi\\tab_more_unselect.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\tab_more_select.png",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\src\\main\\res\\mipmap-xhdpi\\tab_more_select.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\tab_speech_unselect.png",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\src\\main\\res\\mipmap-xhdpi\\tab_speech_unselect.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\tab_home_select.png",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\src\\main\\res\\mipmap-xhdpi\\tab_home_select.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\tab_home_unselect.png",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\src\\main\\res\\mipmap-xhdpi\\tab_home_unselect.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\tab_contact_select.png",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\src\\main\\res\\mipmap-xhdpi\\tab_contact_select.png"
+    }
+]

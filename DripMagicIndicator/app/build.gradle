@@ -5,7 +5,7 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "net.lucode.hackware.magicindicatordemo"
+        applicationId "com.iflytek.drip.magicindicatordemo"
         minSdkVersion 9
         targetSdkVersion 23
         versionCode 1

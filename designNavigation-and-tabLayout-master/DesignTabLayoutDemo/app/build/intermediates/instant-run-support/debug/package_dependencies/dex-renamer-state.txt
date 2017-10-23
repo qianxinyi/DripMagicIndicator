@@ -1,0 +1,25 @@
+#Thu Sep 28 09:50:06 CST 2017
+renamed.7=classes.dex
+renamed.6=classes2.dex
+renamed.5=classes3.dex
+renamed.4=classes6.dex
+renamed.3=classes5.dex
+renamed.2=classes7.dex
+renamed.1=classes4.dex
+renamed.0=classes8.dex
+base.7=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_0dd0f36bce01375224e50649d3f6158322a9aeaa
+base.6=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_1683584e728e1053ec1a3301afef1e3c5cf539f5
+base.5=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_2d264c1e2632855514d7fe48b82c3a7a8fb97f13
+base.4=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_bdb1094e2a16914352650c999839dcb1e1c0beb4
+base.3=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_aed8951012d38bc9bdf27f52289890776c5a2601
+base.2=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.4.0_b6d952c03c47b2fbc7d3751128d91bf30e6b0629
+base.1=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_3a43507fbfb2d12a486f61a3097487bcdef0bb45
+base.0=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.4.0_15f5d4517e18bbc6da94a0bfcc367f75b3f88aca
+file.7=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_0dd0f36bce01375224e50649d3f6158322a9aeaa\\classes.dex
+file.6=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_1683584e728e1053ec1a3301afef1e3c5cf539f5\\classes.dex
+file.5=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_2d264c1e2632855514d7fe48b82c3a7a8fb97f13\\classes.dex
+file.4=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_bdb1094e2a16914352650c999839dcb1e1c0beb4\\classes.dex
+file.3=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_aed8951012d38bc9bdf27f52289890776c5a2601\\classes.dex
+file.2=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.4.0_b6d952c03c47b2fbc7d3751128d91bf30e6b0629\\classes.dex
+file.1=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_3a43507fbfb2d12a486f61a3097487bcdef0bb45\\classes.dex
+file.0=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.4.0_15f5d4517e18bbc6da94a0bfcc367f75b3f88aca\\classes.dex

@@ -1,0 +1,4 @@
+#Mon Oct 09 19:11:58 CST 2017
+base.0=E\:\\AndroidProject\\MyOwnView\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1
+renamed.0=classes.dex
+file.0=E\:\\AndroidProject\\MyOwnView\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1\\classes.dex

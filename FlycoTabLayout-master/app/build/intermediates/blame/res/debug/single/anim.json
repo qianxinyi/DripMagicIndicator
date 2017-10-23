@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\84229c4316e092002a78afbe0617c9c2c0f08dfc\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\84229c4316e092002a78afbe0617c9c2c0f08dfc\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\84229c4316e092002a78afbe0617c9c2c0f08dfc\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\84229c4316e092002a78afbe0617c9c2c0f08dfc\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\84229c4316e092002a78afbe0617c9c2c0f08dfc\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\84229c4316e092002a78afbe0617c9c2c0f08dfc\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\84229c4316e092002a78afbe0617c9c2c0f08dfc\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\84229c4316e092002a78afbe0617c9c2c0f08dfc\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\84229c4316e092002a78afbe0617c9c2c0f08dfc\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\84229c4316e092002a78afbe0617c9c2c0f08dfc\\output\\res\\anim\\abc_popup_exit.xml"
+    }
+]

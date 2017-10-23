@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\MyOwnView\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_android_black_24dp.png",
+        "source": "D:\\MyOwnView\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_android_black_24dp.png"
+    },
+    {
+        "merged": "D:\\MyOwnView\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_filter_drama_black_24dp.png",
+        "source": "D:\\MyOwnView\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_filter_drama_black_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\MyOwnView\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_filter_drama_black_24dp.png",
+        "source": "E:\\AndroidProject\\MyOwnView\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_filter_drama_black_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\MyOwnView\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_android_black_24dp.png",
+        "source": "E:\\AndroidProject\\MyOwnView\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_android_black_24dp.png"
+    }
+]

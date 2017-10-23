@@ -1,0 +1,92 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:2:1-34:12
+	package
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:3:5-41
+		INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:4:5-63
+	android:versionCode
+		INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml
+application
+ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:6:5-32:19
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\admin\.android\build-cache\84229c4316e092002a78afbe0617c9c2c0f08dfc\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\admin\.android\build-cache\d3674b612ba01471c8569caae06111bb4338fe75\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\admin\.android\build-cache\32dce65a8af844725fe39ed16cfe169a5b6cf3db\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\admin\.android\build-cache\6412153c572657a2b965f3eb7acf4f05a9ed0f6e\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\admin\.android\build-cache\ea321032902a760a1e3991f11f923b2ecef77c71\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\admin\.android\build-cache\b46b3ed8f50fdcbe8dd32cefd5074b910d3653d0\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\admin\.android\build-cache\ef1cc796ceda0d4e49dad445cc9a1763ca13a481\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\admin\.android\build-cache\06ecd5dd7129eb3a09789b755fb56473cfd524f1\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\admin\.android\build-cache\8ca086d207a443aeb35252409c80bfa851b18d57\output\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:9:9-41
+	android:supportsRtl
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:10:9-35
+	android:allowBackup
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:7:9-35
+	android:icon
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:8:9-43
+	android:theme
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:11:9-52
+activity#com.flyco.tablayoutsamples.ui.SimpleHomeActivity
+ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:12:9-21:20
+	android:label
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:14:13-45
+	android:theme
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:15:13-44
+	android:name
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:13:13-50
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:17:17-68
+	android:name
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:19:17-76
+	android:name
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.flyco.tablayoutsamples.ui.CommonTabActivity
+ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:22:9-24:51
+	android:screenOrientation
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:24:13-49
+	android:name
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:23:13-49
+activity#com.flyco.tablayoutsamples.ui.SlidingTabActivity
+ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:25:9-27:51
+	android:screenOrientation
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:27:13-49
+	android:name
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:26:13-50
+activity#com.flyco.tablayoutsamples.ui.SegmentTabActivity
+ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:28:9-30:51
+	android:screenOrientation
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:30:13-49
+	android:name
+		ADDED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml:29:13-50
+uses-sdk
+INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\admin\.android\build-cache\84229c4316e092002a78afbe0617c9c2c0f08dfc\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\admin\.android\build-cache\d3674b612ba01471c8569caae06111bb4338fe75\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\admin\.android\build-cache\32dce65a8af844725fe39ed16cfe169a5b6cf3db\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\admin\.android\build-cache\6412153c572657a2b965f3eb7acf4f05a9ed0f6e\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\admin\.android\build-cache\ea321032902a760a1e3991f11f923b2ecef77c71\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\admin\.android\build-cache\b46b3ed8f50fdcbe8dd32cefd5074b910d3653d0\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\admin\.android\build-cache\ef1cc796ceda0d4e49dad445cc9a1763ca13a481\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\admin\.android\build-cache\06ecd5dd7129eb3a09789b755fb56473cfd524f1\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\admin\.android\build-cache\8ca086d207a443aeb35252409c80bfa851b18d57\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2] C:\Users\admin\.android\build-cache\f375b229ebe672163143b12f0ffedefcc8805049\output\AndroidManifest.xml:8:5-10:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.1.0] C:\Users\admin\.android\build-cache\84229c4316e092002a78afbe0617c9c2c0f08dfc\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidProject\FlycoTabLayout-master\app\src\main\AndroidManifest.xml

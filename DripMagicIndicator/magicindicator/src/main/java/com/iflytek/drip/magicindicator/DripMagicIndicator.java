@@ -1,10 +1,15 @@
 package com.iflytek.drip.magicindicator;
 
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
+import com.iflytek.drip.magicindicator.buildins.UIUtil;
 import com.iflytek.drip.magicindicator.buildins.commonnavigator.CommonNavigator;
 import com.iflytek.drip.magicindicator.buildins.commonnavigator.CommonNavigatorAdapter;
 
@@ -14,14 +19,17 @@ import com.iflytek.drip.magicindicator.buildins.commonnavigator.CommonNavigatorA
  */
 public class DripMagicIndicator extends FrameLayout implements IMagicIndicator{
     private CommonNavigator mNavigator;
+    private Context context;
     public DripMagicIndicator(Context context) {
         super(context);
+        this.context=context;
         if (mNavigator == null)
             mNavigator = new CommonNavigator(context);
     }
 
     public DripMagicIndicator(Context context, AttributeSet attrs) {
         super(context, attrs);
+        this.context=context;
         if (mNavigator == null)
             mNavigator = new CommonNavigator(context);
     }
@@ -128,16 +136,31 @@ public class DripMagicIndicator extends FrameLayout implements IMagicIndicator{
      * offer to set badge
      */
     public void setPagerTitleViewWithMsgBadge(int index, int badgeResLayout, String msg) {
-       mNavigator.setPagerTitleViewWithMsgBadge(index,badgeResLayout,msg);
+        mNavigator.setPagerTitleViewWithMsgBadge(index,badgeResLayout,msg);
     }
     public void setPagerTitleViewWithMsgBadge(int index, String msg) {
         mNavigator.setPagerTitleViewWithMsgBadge(index,msg);
     }
     public void setPagerTitleViewWithDotBadge(int index, int badgeResLayout) {
-       mNavigator.setPagerTitleViewWithDotBadge(index,badgeResLayout);
+        mNavigator.setPagerTitleViewWithDotBadge(index,badgeResLayout);
     }
     public void setPagerTitleViewWithDotBadge(int index){
-      mNavigator.setPagerTitleViewWithDotBadge(index);
+        mNavigator.setPagerTitleViewWithDotBadge(index);
+    }
+
+    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
+    public void setDividerLines(int padding){
+        LinearLayout titleContainer = mNavigator.getTitleContainer(); // must after setNavigator
+        titleContainer.setShowDividers(LinearLayout.SHOW_DIVIDER_MIDDLE);
+        titleContainer.setDividerPadding(UIUtil.dip2px(context, padding));
+        titleContainer.setDividerDrawable(getResources().getDrawable(R.drawable.simple_splitter));
+    }
+
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    public void setDividerLines(Drawable drawable){
+        LinearLayout titleContainer = mNavigator.getTitleContainer(); // must after setNavigator
+        titleContainer.setShowDividers(LinearLayout.SHOW_DIVIDER_MIDDLE);
+        titleContainer.setDividerDrawable(drawable);
     }
 
 

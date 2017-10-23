@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.annotation.ColorInt;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.LinearLayout;
 
+import com.iflytek.drip.magicindicator.DripMagicIndicator;
 import com.iflytek.drip.magicindicator.FragmentContainerHelper;
 import com.iflytek.drip.magicindicator.MagicIndicator;
 import com.iflytek.drip.magicindicator.ViewPagerHelper;
@@ -52,10 +54,10 @@ public class FixedTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator1() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator1);
-        CommonNavigator commonNavigator = new CommonNavigator(this);
-        commonNavigator.setAdjustMode(true);
-        commonNavigator.setAdapter(new CommonNavigatorAdapter() {
+        DripMagicIndicator magicIndicator = (DripMagicIndicator) findViewById(R.id.magic_indicator1);
+        DripMagicIndicator.Builder builder=magicIndicator.new Builder();
+        builder.setAdjustMode(true)
+               .setAdapter(new CommonNavigatorAdapter() {
             @Override
             public int getCount() {
                 return mDataList == null ? 0 : mDataList.size();
@@ -82,12 +84,9 @@ public class FixedTabExampleActivity extends AppCompatActivity {
                 indicator.setColors(Color.parseColor("#40c4ff"));
                 return indicator;
             }
-        });
-        magicIndicator.setNavigator(commonNavigator);
-        LinearLayout titleContainer = commonNavigator.getTitleContainer(); // must after setNavigator
-        titleContainer.setShowDividers(LinearLayout.SHOW_DIVIDER_MIDDLE);
-        titleContainer.setDividerPadding(UIUtil.dip2px(this, 15));
-        titleContainer.setDividerDrawable(getResources().getDrawable(R.drawable.simple_splitter));
+        })
+               .build();
+        magicIndicator.setDividerLines(15);
         ViewPagerHelper.bind(magicIndicator, mViewPager);
     }
 
@@ -191,9 +190,9 @@ public class FixedTabExampleActivity extends AppCompatActivity {
     }
 
     private void initMagicIndicator4() {
-        MagicIndicator magicIndicator = (MagicIndicator) findViewById(R.id.magic_indicator4);
-        CommonNavigator commonNavigator = new CommonNavigator(this);
-        commonNavigator.setAdapter(new CommonNavigatorAdapter() {
+        DripMagicIndicator magicIndicator = (DripMagicIndicator) findViewById(R.id.magic_indicator4);
+        DripMagicIndicator.Builder builder=magicIndicator.new Builder();
+        builder.setAdapter(new CommonNavigatorAdapter() {
 
             @Override
             public int getCount() {
@@ -223,25 +222,22 @@ public class FixedTabExampleActivity extends AppCompatActivity {
                 linePagerIndicator.setColors(Color.WHITE);
                 return linePagerIndicator;
             }
-        });
-        magicIndicator.setNavigator(commonNavigator);
-        LinearLayout titleContainer = commonNavigator.getTitleContainer(); // must after setNavigator
-        titleContainer.setShowDividers(LinearLayout.SHOW_DIVIDER_MIDDLE);
-        titleContainer.setDividerDrawable(new ColorDrawable() {
+        }).build();
+        magicIndicator.setDividerLines(new ColorDrawable(Color.WHITE) {
             @Override
             public int getIntrinsicWidth() {
-                return UIUtil.dip2px(FixedTabExampleActivity.this, 15);
+                return UIUtil.dip2px(FixedTabExampleActivity.this, 0.5);
             }
         });
-
-        final FragmentContainerHelper fragmentContainerHelper = new FragmentContainerHelper(magicIndicator);
-        fragmentContainerHelper.setInterpolator(new OvershootInterpolator(2.0f));
-        fragmentContainerHelper.setDuration(300);
-        mViewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
-            @Override
-            public void onPageSelected(int position) {
-                fragmentContainerHelper.handlePageSelected(position);
-            }
-        });
+        ViewPagerHelper.bind(magicIndicator, mViewPager);
+//        final FragmentContainerHelper fragmentContainerHelper = new FragmentContainerHelper(magicIndicator);
+//        fragmentContainerHelper.setInterpolator(new OvershootInterpolator(2.0f));
+//        fragmentContainerHelper.setDuration(300);
+//        mViewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+//            @Override
+//            public void onPageSelected(int position) {
+//                fragmentContainerHelper.handlePageSelected(position);
+//            }
+//        });
     }
 }

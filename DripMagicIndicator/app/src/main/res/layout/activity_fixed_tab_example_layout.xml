@@ -13,7 +13,7 @@
         android:background="#455a64"
         android:orientation="vertical">
 
-        <com.iflytek.drip.magicindicator.MagicIndicator
+        <com.iflytek.drip.magicindicator.DripMagicIndicator
             android:id="@+id/magic_indicator1"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/common_navigator_height"
@@ -48,7 +48,7 @@
         android:background="@android:color/black"
         android:orientation="vertical">
 
-        <com.iflytek.drip.magicindicator.MagicIndicator
+        <com.iflytek.drip.magicindicator.DripMagicIndicator
             android:id="@+id/magic_indicator4"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/common_navigator_height"

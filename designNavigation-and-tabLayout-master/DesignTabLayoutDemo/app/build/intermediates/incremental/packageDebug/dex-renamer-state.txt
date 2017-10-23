@@ -1,0 +1,7 @@
+#Thu Sep 28 09:50:07 CST 2017
+base.0=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8e71544196d05102ad45ef719a94391a0fd1d68f
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d757163a7d4af6eefb1efd56632536b255638471\\classes.dex
+base.1=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d757163a7d4af6eefb1efd56632536b255638471
+file.0=E\:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8e71544196d05102ad45ef719a94391a0fd1d68f\\classes.dex

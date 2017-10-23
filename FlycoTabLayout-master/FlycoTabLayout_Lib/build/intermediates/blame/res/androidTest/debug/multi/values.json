@@ -1,0 +1,547 @@
+[
+    {
+        "outputFile": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 50,
+                    "endOffset": 101
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 50,
+                        "endOffset": 101
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 106,
+                    "endColumn": 56,
+                    "endOffset": 158
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 106,
+                        "endColumn": 56,
+                        "endOffset": 158
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 163,
+                    "endColumn": 54,
+                    "endOffset": 213
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 163,
+                        "endColumn": 54,
+                        "endOffset": 213
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 218,
+                    "endColumn": 62,
+                    "endOffset": 276
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 218,
+                        "endColumn": 62,
+                        "endOffset": 276
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 281,
+                    "endColumn": 60,
+                    "endOffset": 337
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 281,
+                        "endColumn": 60,
+                        "endOffset": 337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 342,
+                    "endColumn": 62,
+                    "endOffset": 400
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 342,
+                        "endColumn": 62,
+                        "endOffset": 400
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 405,
+                    "endColumn": 52,
+                    "endOffset": 453
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 405,
+                        "endColumn": 52,
+                        "endOffset": 453
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 458,
+                    "endColumn": 64,
+                    "endOffset": 518
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 458,
+                        "endColumn": 64,
+                        "endOffset": 518
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 523,
+                    "endLine": 13,
+                    "endColumn": 11,
+                    "endOffset": 662
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 523,
+                        "endLine": 13,
+                        "endColumn": 11,
+                        "endOffset": 662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 667,
+                    "endColumn": 57,
+                    "endOffset": 720
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 667,
+                        "endColumn": 57,
+                        "endOffset": 720
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 725,
+                    "endColumn": 64,
+                    "endOffset": 785
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 725,
+                        "endColumn": 64,
+                        "endOffset": 785
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 790,
+                    "endColumn": 62,
+                    "endOffset": 848
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 790,
+                        "endColumn": 62,
+                        "endOffset": 848
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 853,
+                    "endColumn": 63,
+                    "endOffset": 912
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 853,
+                        "endColumn": 63,
+                        "endOffset": 912
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 917,
+                    "endColumn": 61,
+                    "endOffset": 974
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 917,
+                        "endColumn": 61,
+                        "endOffset": 974
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 979,
+                    "endLine": 23,
+                    "endColumn": 11,
+                    "endOffset": 1158
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 979,
+                        "endLine": 23,
+                        "endColumn": 11,
+                        "endOffset": 1158
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1163,
+                    "endColumn": 56,
+                    "endOffset": 1215
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1163,
+                        "endColumn": 56,
+                        "endOffset": 1215
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1220,
+                    "endColumn": 66,
+                    "endOffset": 1282
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1220,
+                        "endColumn": 66,
+                        "endOffset": 1282
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1287,
+                    "endColumn": 52,
+                    "endOffset": 1335
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1287,
+                        "endColumn": 52,
+                        "endOffset": 1335
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1340,
+                    "endColumn": 54,
+                    "endOffset": 1390
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1340,
+                        "endColumn": 54,
+                        "endOffset": 1390
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1395,
+                    "endColumn": 50,
+                    "endOffset": 1441
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1395,
+                        "endColumn": 50,
+                        "endOffset": 1441
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1446,
+                    "endColumn": 50,
+                    "endOffset": 1492
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1446,
+                        "endColumn": 50,
+                        "endOffset": 1492
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1497,
+                    "endLine": 34,
+                    "endColumn": 11,
+                    "endOffset": 1664
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1497,
+                        "endLine": 34,
+                        "endColumn": 11,
+                        "endOffset": 1664
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1669,
+                    "endColumn": 52,
+                    "endOffset": 1717
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1669,
+                        "endColumn": 52,
+                        "endOffset": 1717
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1722,
+                    "endColumn": 54,
+                    "endOffset": 1772
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1722,
+                        "endColumn": 54,
+                        "endOffset": 1772
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 1777,
+                    "endColumn": 49,
+                    "endOffset": 1822
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1777,
+                        "endColumn": 49,
+                        "endOffset": 1822
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 1827,
+                    "endColumn": 52,
+                    "endOffset": 1875
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1827,
+                        "endColumn": 52,
+                        "endOffset": 1875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 1880,
+                    "endLine": 42,
+                    "endColumn": 11,
+                    "endOffset": 2019
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 1880,
+                        "endLine": 42,
+                        "endColumn": 11,
+                        "endOffset": 2019
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 2024,
+                    "endColumn": 57,
+                    "endOffset": 2077
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 2024,
+                        "endColumn": 57,
+                        "endOffset": 2077
+                    }
+                }
+            }
+        ]
+    }
+]

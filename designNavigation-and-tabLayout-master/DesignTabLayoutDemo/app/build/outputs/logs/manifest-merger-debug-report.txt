@@ -1,0 +1,66 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:2:1-22:12
+	package
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:2:11-60
+		INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:3:11-69
+	android:versionCode
+		INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml
+application
+ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support:design:23.4.0] C:\Users\admin\.android\build-cache\d6a8f150dc4460d3e31b884c1ed853241af0cdda\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\admin\.android\build-cache\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\admin\.android\build-cache\3bbcbbb4f59a9d3babe87b013ac3dbd4e5077dc5\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\admin\.android\build-cache\dc60e4bb9158b3346f5dd0608ed03fcb2e81ab0f\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\admin\.android\build-cache\658f4535a7aef335c34193d44e5ef6eb85c4edd6\output\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:9:9-35
+	android:allowBackup
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:10:9-40
+activity#com.example.nanchen.designtablayoutdemo.MainActivity
+ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:11:9-17:20
+	android:name
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:11:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:12:13-16:29
+action#android.intent.action.MAIN
+ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:13:17-68
+	android:name
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:13:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:15:17-76
+	android:name
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:15:27-74
+activity#com.example.nanchen.designtablayoutdemo.CoordinatorActivity
+ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:18:9-19:20
+	android:name
+		ADDED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml:18:19-54
+uses-sdk
+INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:23.4.0] C:\Users\admin\.android\build-cache\d6a8f150dc4460d3e31b884c1ed853241af0cdda\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\admin\.android\build-cache\70c6825d91e8afe806e5bad26d16a0893a4a20e8\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\admin\.android\build-cache\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\admin\.android\build-cache\3bbcbbb4f59a9d3babe87b013ac3dbd4e5077dc5\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\admin\.android\build-cache\dc60e4bb9158b3346f5dd0608ed03fcb2e81ab0f\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\admin\.android\build-cache\658f4535a7aef335c34193d44e5ef6eb85c4edd6\output\AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\admin\.android\build-cache\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidProject\designNavigation-and-tabLayout-master\DesignTabLayoutDemo\app\src\main\AndroidManifest.xml

@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\res\\merged\\debug\\color\\navigation_selector.xml",
+        "source": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\src\\main\\res\\color\\navigation_selector.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\\output\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\designNavigation-and-tabLayout-master\\DesignTabLayoutDemo\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\admin\\.android\\build-cache\\ada18afadb4df0b77b9daa8e313abafb12cf7eb3\\output\\res\\color\\abc_primary_text_material_light.xml"
+    }
+]

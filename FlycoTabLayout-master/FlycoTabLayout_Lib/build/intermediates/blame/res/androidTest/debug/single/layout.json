@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_right.xml",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_right.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_top.xml",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_top.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_bottom.xml",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_bottom.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_segment.xml",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_segment.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab_left.xml",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab_left.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_tab.xml",
+        "source": "E:\\AndroidProject\\FlycoTabLayout-master\\FlycoTabLayout_Lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_tab.xml"
+    }
+]
